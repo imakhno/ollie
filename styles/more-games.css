@@ -1,0 +1,282 @@
+.more__games {
+    position: relative;
+    padding-bottom: clamp(15px, 5vw, 100px);
+}
+
+.more__games-bgImg {
+    position: absolute;
+    top: -15%;
+    left: 20%;
+    height: 100%;
+}
+
+.more__games-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 113px;
+}
+
+.games__header-title {
+    font-size: clamp(42px, 10vw, 90px);
+    line-height: 125%;
+    z-index: 0;
+}
+
+.games__header-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 98px;
+}
+
+
+.slider-left_arrow,
+.slider-right_arrow {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.slider-left_arrow {
+    background-image: url(../images/moreGames/arrow-left.png);
+}
+
+.slider-right_arrow {
+    background-image: url(../images/moreGames/arrow-right.png);
+}
+
+.slider-left_arrow:hover {
+    background-image: url(../images/moreGames/arrow-left-hover.png);
+}
+
+.slider-right_arrow:hover {
+    background-image: url(../images/moreGames/arrow-right-hover.png);
+}
+
+
+.slider-left_arrow.slick-disabled {
+    background-image: url(../images/moreGames/arrow-left-disabled.png);
+    cursor: default;
+}
+
+.slider-right_arrow.slick-disabled {
+    background-image: url(../images/moreGames/arrow-right-disabled.png);
+    cursor: default;
+}
+
+.moreGames__slider {
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 60px;
+}
+
+.moreGames__slider .slick-slide {
+    margin: 0 10px;
+}
+
+.moreGames__slider .slick-list {
+    margin: 0 -10px;
+}
+
+.moreGames__slider .slick-slide>div {
+    margin-bottom: 30px;
+}
+
+.moreGames__slide {
+    position: relative;
+    width: 197px !important;
+    min-height: 306px;
+    border-radius: 32px;
+    background: -webkit-gradient(linear,
+            right top, left top,
+            color-stop(-3.41%, rgba(30, 88, 252, 0.24)),
+            color-stop(33.84%, rgba(164, 39, 235, 0.24)),
+            color-stop(50.67%, rgba(217, 20, 228, 0.24)),
+            color-stop(74.1%, rgba(225, 15, 163, 0.24)),
+            color-stop(104.15%, rgba(241, 4, 25, 0.24)));
+    background: -o-linear-gradient(right,
+            rgba(30, 88, 252, 0.24) -3.41%,
+            rgba(164, 39, 235, 0.24) 33.84%,
+            rgba(217, 20, 228, 0.24) 50.67%,
+            rgba(225, 15, 163, 0.24) 74.1%,
+            rgba(241, 4, 25, 0.24) 104.15%);
+    background: linear-gradient(-90deg,
+            rgba(30, 88, 252, 0.24) -3.41%,
+            rgba(164, 39, 235, 0.24) 33.84%,
+            rgba(217, 20, 228, 0.24) 50.67%,
+            rgba(225, 15, 163, 0.24) 74.1%,
+            rgba(241, 4, 25, 0.24) 104.15%);
+    -webkit-backdrop-filter: blur(24.9px);
+    backdrop-filter: blur(24.9px);
+}
+
+.gradient-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 114px;
+    padding: 16px;
+}
+
+.moreGames__slide-img {
+    border-top-left-radius: 32px; 
+    border-top-right-radius: 32px; 
+    width: 100%;
+    height: 192px;
+}
+
+.moreGames__slide-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: clamp(100px, 60vw, 114px);
+    padding: 16px;
+}
+
+.slide__info-title {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.slide__info-statistics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.moreGames__info-rate,
+.moreGames__info-download {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.moreGames__info-rate .wrapper-img,
+.moreGames__info-download .wrapper-img {
+    width: 24px;
+    height: 24px;
+}
+
+.moreGames__info-rate span,
+.moreGames__info-download span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    font-size: clamp(12px, 5vw, 16px);
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    margin-left: 7.5px;
+}
+
+.slick-dots {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    position: relative;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    z-index: 50;
+}
+
+.slick-dots li {
+    margin: 0 5px;
+}
+
+.slick-dots li button {
+    background-color: #ffffff4b;
+    /* цвет точек */
+    border-radius: 50%;
+    width: 10px;
+    /* размер точек */
+    height: 10px;
+    display: block;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #fff;
+    /* цвет активной точки */
+}
+
+
+@media (max-width: 769px) {
+    .games__header-buttons {
+        display: none;
+    }
+
+    .games__header-title {
+        width: 100%;
+
+    }
+
+
+}
+
+@media (max-width: 695px) {
+    .moreGames__slider .slick-slide>div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .moreGames__slider {
+        padding: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .moreGames__slide-img {
+        height: auto;
+    }
+
+    .moreGames__slide {
+        min-height: 200px;
+    }
+}

@@ -1,0 +1,211 @@
+.contacts {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.contacts-elipse {
+    position: absolute;
+    top: 50%;
+    left: 22%;
+
+}
+
+.contact__info {
+    width: 100%;
+    min-height: 361px;
+    height: auto;
+    background: rgba(45, 16, 57, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(7.5px);
+    backdrop-filter: blur(7.5px);
+    border-radius: 40px;
+    padding-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.contact__info-title,
+.info__title {
+    text-align: center;
+}
+
+.contact__info-title {
+    max-width: 635px;
+    width: 100%;
+    height: 113px;
+}
+
+.info__title {
+    font-size: clamp(42px, 10vw, 90px);
+}
+
+.contact__info-contacts {
+    max-width: 635px;
+    width: 100%;
+    padding-left: 32px;
+}
+
+.contact__info-contacts h3 {
+    font-family: 'Paytone One';
+    font-size: 18px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: #F5F7FA;
+    padding-bottom: 8px;
+}
+
+.contact__info-contacts .contacts__business-email,
+.contact__info-contacts .contacts__career-email {
+    margin-bottom: 32px;
+    display: inline-block;
+    position: relative;
+    font-family: 'Lato';
+    background: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
+}
+
+.contact__info-contacts .contacts__business-email::after,
+.contact__info-contacts .contacts__career-email::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+
+}
+
+.contact__info-contacts .contacts__business-email:hover,
+.contact__info-contacts .contacts__career-email:hover {
+    background: -webkit-gradient(linear,
+            right top, left top,
+            color-stop(-3.41%, rgba(30, 88, 252, 1)),
+            color-stop(33.84%, rgba(164, 39, 235, 1)),
+            color-stop(50.67%, rgba(217, 20, 228, 1)),
+            color-stop(74.1%, rgba(225, 15, 163, 1)),
+            color-stop(104.15%, rgba(241, 4, 25, 1))) !important;
+    background: -o-linear-gradient(right,
+            rgba(30, 88, 252, 1) -3.41%,
+            rgba(164, 39, 235, 1) 33.84%,
+            rgba(217, 20, 228, 1) 50.67%,
+            rgba(225, 15, 163, 1) 74.1%,
+            rgba(241, 4, 25, 1) 104.15%) !important;
+    background: linear-gradient(-90deg,
+            rgba(30, 88, 252, 1) -3.41%,
+            rgba(164, 39, 235, 1) 33.84%,
+            rgba(217, 20, 228, 1) 50.67%,
+            rgba(225, 15, 163, 1) 74.1%,
+            rgba(241, 4, 25, 1) 104.15%) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.contact__info-contacts .contacts__business-email:hover::after,
+.contact__info-contacts .contacts__career-email:hover::after {
+    background: -webkit-gradient(linear,
+            right top, left top,
+            color-stop(-3.41%, rgba(30, 88, 252, 1)),
+            color-stop(33.84%, rgba(164, 39, 235, 1)),
+            color-stop(50.67%, rgba(217, 20, 228, 1)),
+            color-stop(74.1%, rgba(225, 15, 163, 1)),
+            color-stop(104.15%, rgba(241, 4, 25, 1))) !important;
+    background: -o-linear-gradient(right,
+            rgba(30, 88, 252, 1) -3.41%,
+            rgba(164, 39, 235, 1) 33.84%,
+            rgba(217, 20, 228, 1) 50.67%,
+            rgba(225, 15, 163, 1) 74.1%,
+            rgba(241, 4, 25, 1) 104.15%) !important;
+    background: linear-gradient(-90deg,
+            rgba(30, 88, 252, 1) -3.41%,
+            rgba(164, 39, 235, 1) 33.84%,
+            rgba(217, 20, 228, 1) 50.67%,
+            rgba(225, 15, 163, 1) 74.1%,
+            rgba(241, 4, 25, 1) 104.15%) !important;
+    /* Градиент для подчеркивания */
+}
+
+
+.contacts__social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 72px;
+}
+
+.social-item {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+.social__links-telegram,
+.social__links-linkedIn {
+    background-size: cover;
+}
+
+.social__links-telegram {
+    background-image: url(../images/social/telegram.png);
+}
+
+.social__links-telegram:hover {
+    background-image: url(../images/social/telegram-hover.png);
+}
+
+.social__links-linkedIn {
+    background-image: url(../images/social/in.png);
+}
+
+.social__links-linkedIn:hover {
+    background-image: url(../images/social/in-hover.png);
+}
+
+@media (max-width: 710px) {
+    .contact__info {
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .contact__info-contacts {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    .info__contacts-business,
+    .info__contacts-career,
+    .info__contacts-social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}

@@ -1,0 +1,290 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    font-family: 'Paytone One';
+    font-style: normal;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background: #000;
+    color: #fff;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/* ================================= */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+
+    opacity: 1;
+    /* Начальная непрозрачность */
+    transition: opacity 0.5s ease-in-out;
+    /* Плавная анимация изменения прозрачности */
+}
+
+#preloader.hidden {
+    opacity: 0;
+    /* Когда скрываем, прелоадер становится прозрачным */
+    pointer-events: none;
+    /* Убираем кликабельность при скрытии */
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fff;
+    border-top: 5px solid #888;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ================================= */
+
+
+/* Шрифты */
+@font-face {
+    font-family: "Paytone One";
+    src: url("../fonts/PaytoneOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+body {
+    background: #000;
+}
+
+/* Основные контейнеры */
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1330px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Фоновые элементы */
+.bgVector1 {
+    width: 100%;
+    height: clamp(55%, 60vw, 60%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Основной заголовок */
+.main__title {
+    width: clamp(343px, 60vw, 955px);
+    font-family: 'Paytone One';
+    font-weight: 400;
+    font-size: clamp(42px, 5vw + 1rem, 92px);
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: #fff;
+}
+
+.wrapper__title {
+    padding-bottom: clamp(64px, 6vw, 140px);
+}
+
+/* Информация */
+.main__info {
+    position: relative;
+    padding: 10px;
+}
+
+.main__info-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.item-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 386px;
+    height: 298px;
+    background: rgba(45, 16, 57, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(7.5px);
+    backdrop-filter: blur(7.5px);
+    border-radius: 40px;
+}
+
+@media (max-width: 1200px) {
+    .item-info {
+        width: 320px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .main__info-wrapper {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+    }
+
+    .item-info {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 425px) {
+    .item-info {
+        width: 100%;
+    }
+}
+
+
+/* Футер */
+.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-bottom: 24px;
+}
+
+.footer__privacy a {
+    font-family: 'Lato';
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #fff;
+}
+
+.footer__privacy a:hover {
+    text-decoration: underline;
+}

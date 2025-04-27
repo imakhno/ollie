@@ -1,0 +1,473 @@
+@media (max-width: 960px) {
+    .topGames-slider {
+        overflow: visible !important;
+        height: auto !important;
+    }
+
+    .topGames-slider .swiper-wrapper {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+        position: static !important;
+        height: auto !important;
+        -webkit-transform: none !important;
+        -ms-transform: none !important;
+        transform: none !important;
+    }
+
+    .topGames-slider .swiper-slide {
+        width: 100% !important;
+        height: auto !important;
+        -ms-flex-negative: 0 !important;
+        flex-shrink: 0 !important;
+        position: static !important;
+        opacity: 1 !important;
+        -webkit-transform: none !important;
+        -ms-transform: none !important;
+        transform: none !important;
+    }
+
+    .swiper-pagination {
+        display: none !important;
+    }
+}
+
+@media (min-width: 815px) {
+    .slide__info-wrapper {
+        margin-left: -70px;
+
+    }
+}
+
+@media (max-width: 815px) {
+
+    .topGames-slide,
+    .topGames-reverse {
+        width: 100%;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+
+    .topGames__wrapper-img {
+        width: 100%;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .topGames__slide-info {
+        width: 100%;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    .topGames__info-downloads {
+        padding-top: 5px;
+        width: 182px;
+    }
+
+    .topGames__info-downloads a {
+        width: 83px;
+    }
+
+    .topGames__wrapper-img,
+    .topGames__slide-info {
+        width: 100% !important;
+    }
+
+    .topGames-reverse .topGames__slide-info {
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+    }
+
+    .topGames__info-description {
+        text-align: center;
+    }
+
+    .topGames__info-title {
+        padding: 16px 0;
+    }
+
+    .topGames__info-statistics {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 230px;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .slide__info-wrapper {
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+    }
+
+    .topGames__info-description {
+        width: 100% !important;
+    }
+
+    .topGames__slide-info {
+        height: auto !important;
+    }
+}
+
+.topGames-slider {
+    margin: 40px 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.topGames__slider-wrapper {
+    height: 650px;
+
+}
+
+.main__topGames {
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.main__topGames-vector {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 120%;
+    opacity: .8;
+}
+
+/* Фоновые изображения */
+.wrapper__info-img {
+    width: 100%;
+    position: absolute;
+    height: 200%;
+    left: 2%;
+    opacity: .5;
+}
+
+.wrapper__info-img1,
+.wrapper__info-img2 {
+    position: absolute;
+    will-change: transform;
+    -webkit-transition: -webkit-transform 0.8s ease-out;
+    transition: -webkit-transform 0.8s ease-out;
+    -o-transition: transform 0.8s ease-out;
+    transition: transform 0.8s ease-out;
+    transition: transform 0.8s ease-out, -webkit-transform 0.8s ease-out;
+}
+
+.wrapper__info-img1 {
+    top: 50px;
+    left: -220px;
+}
+
+.wrapper__info-img2 {
+    bottom: -290px;
+    right: -200px;
+}
+
+/* Тексты в item-info */
+.item-info p {
+    font-family: 'Paytone One';
+    font-weight: 400;
+    font-size: clamp(92px, 5vw + 1rem, 140px);
+    letter-spacing: 0.01em;
+    color: #fff;
+}
+
+.item-info span {
+    padding-top: 15px;
+    font-size: clamp(22px, 5vw + 1rem, 40px);
+}
+
+/* Описание игр */
+.main__topGames-title,
+.main__topGames-description {
+    text-align: center;
+    font-family: 'Paytone One';
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: #fff;
+}
+
+.main__topGames-title {
+    padding-top: 80px;
+    font-size: clamp(42px, 5vw, 90px);
+}
+
+.main__topGames-description {
+    font-size: clamp(32px, 5vw, 42px);
+    padding-bottom: clamp(10px, 5vw, 140px);
+}
+
+
+.topGames-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+    overflow: visible;
+}
+
+.topGames__slide-img {
+    position: relative;
+    width: 299px;
+    height: 563px;
+    display: block;
+    max-height: 640px;
+}
+
+.topGames__phone {
+    height: 563px;
+    position: relative;
+    z-index: 2;
+}
+
+.topGames__gif {
+    border-radius: 40px;
+    height: 563px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.topGames__slider-pagination {
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+}
+
+.topGames-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 32px;
+    background-color: transparent;
+    color: #fff;
+    height: auto;
+    padding: 20px 0;
+}
+
+.topGames__slider-pagination {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: white;
+}
+
+
+.topGames__wrapper-img,
+.topGames__slide-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 611px;
+    height: 100%;
+}
+
+
+.topGames__wrapper-img {
+    height: 90%;
+    -webkit-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+
+.topGames__info-downloads {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 238px;
+}
+
+.info__downloads-google,
+.info__downloads-apple {
+    width: 111px;
+}
+
+.topGames__slide-info {
+    height: 450px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+
+.topGames__info-title {
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 89px;
+}
+
+.topGames__info-description {
+    width: clamp(343px, 60vw, 420px);
+    font-weight: 500;
+    font-size: clamp(14px, 5vw, 24px);
+    line-height: 125%;
+    font-family: 'Lato';
+    letter-spacing: 0.01em;
+}
+
+.topGames__info-rate,
+.topGames__info-download {
+    height: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 24px;
+    line-height: 34px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.topGames__info-rate {
+    width: 82px;
+    height: 34px;
+}
+
+.topGames__info-rate img {
+    width: 23px;
+    height: 22px;
+}
+
+.topGames__info-rate span,
+.topGames__info-download span {
+    padding-left: 12.5px;
+}
+
+.topGames__info-download {
+    width: 122px;
+}
+
+.topGames__info-download .wrapper-img,
+.topGames__info-rate .wrapper-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.topGames-reverse .topGames__wrapper-img {
+    -webkit-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+
+.topGames-reverse {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.slide__info-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    height: 100%;
+    justify-content: space-between;
+}
+
+
+
+.topGames-reverse .topGames__slide-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
